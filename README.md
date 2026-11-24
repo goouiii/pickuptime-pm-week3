@@ -2,6 +2,9 @@
 
 쉬는 시간 전에 교내 카페 음료를 미리 주문하고, 예상 픽업 시간에 맞춰 줄 없이 받아가는 서비스 **픽업타임**의 화면 정의서·기능명세서·와이어프레임을 화면별로 함께 읽고, 실제로 눌러볼 수 있는 데모까지 확인하는 사이트입니다. (잇타 10기 PM 스터디 3주차)
 
+**배포 URL:** https://goouiii.github.io/pickuptime-pm-week3/  
+**명세 원문(Notion):** https://app.notion.com/p/4224aecd0f9b81128a7dd6fd50c01d45
+
 ## 메뉴
 
 - **전체 흐름 보기** — 화면 11개 카드(ID·유형, 작은 정적 미리보기, 목적, 다음 이동 경로)와 2주차 User Flow의 핵심 흐름. 카드의 `문서 보기` / `시연하기`로 각각 진입합니다.
@@ -40,7 +43,11 @@ npm run build    # dist/ 생성
 
 라우팅은 HashRouter(`#/docs/SC-HOME-01`)라서 정적 호스팅 어디서든 직접 URL 진입·새로고침이 동작합니다.
 
-## 배포 (Vercel)
+## 배포
+
+현재 GitHub Pages로 배포되어 있습니다. `main`에서 `npm run build` 후 `dist/` 내용을 `gh-pages` 브랜치에 올리면 갱신됩니다.
+
+Vercel로 옮길 경우:
 
 - Framework Preset: `Vite`
 - Root Directory: `./`
