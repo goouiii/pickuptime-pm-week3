@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+html { font-family: Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0; }
+button:not(:disabled) { cursor: pointer; }
+
+@media print {
+  .no-print { display: none !important; }
+  body, .min-h-screen { background: #fff !important; }
+  .avoid-break { break-inside: avoid; }
+  .frame-scroll { max-height: none !important; overflow: visible !important; }
+  main { max-width: none !important; }
+}
